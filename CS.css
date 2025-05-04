@@ -1398,3 +1398,55 @@ select.Age:focus {
     font-size: 1.2rem;
   }
 }
+.body1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-image: url(assets/images/BG.jpg);
+  background-size: cover;      
+  background-position: center;  
+  background-repeat: no-repeat; 
+  
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem 1rem;
+  height: 4rem;
+  width: 100%;
+  background-image: url(assets/images/IFL.png);
+  background-size: cover;      
+  background-position: center;  
+  background-repeat: no-repeat; 
+}
+.navcontainer {
+  flex: 1; /* Take remaining space */
+}
+.navlinks {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  align-items: flex-end;
+  
+}
+.navlinks a{
+  text-decoration: none;
+  font-size: 1.60rem;
+  font-family: 'Raleway';
+  color: #ffffff;
+}
+.navlinks a:hover {
+  color: #0d8af0;
+
+}
+.navlinks li{
+  padding: .80rem;
+}
+.logo img {
+  height: 50px;
+  
+}
