@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&family=Raleway:wght@400;500;600&family=Roboto:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="CS.css">
+</head>
+
+<body class="landing-page">
+    <div class="landing-container">
+        <img src="assets/images/logo1.png" alt="logo" class="landing-logo">
+        <h1>Welcome to <span class="brand">Chrono Sync</span></h1>
+        <p>Redefining every second with smart innovation.</p>
+        <a href="#" class="landing-page-btn" id="loginBtn">Get Started</a>
+    </div>
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+
+            <!-- Form Switch Links -->
+            <div class="form-toggle">
+                <button id="loginToggle" class="active">Login</button>
+                <button id="signupToggle">Sign Up</button>
+            </div>
+
+            <!-- Login Form -->
+            <form id="loginForm" class="form">
+                <h2>Login</h2>
+                <input type="email" placeholder="Username" required />
+                <input type="password" placeholder="Password" required />
+
+                <input type="checkbox" id="myCheckbox">
+                <label for="myCheckbox">Save this Info?</label>
+
+                <div class="google-login">
+                    <p>or</p>
+                    <a href="https://accounts.google.com/v3/signin/identifier?elo=1&ifkv=ASKV5Mg2YpRw0met9WV0B75oB9-pwq7iQL9ZnxK_qoH4vw9V2IVeBBT7lsnNlltR8eKTFcyIYln4rQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S723944236%3A1745748968788157" target="_blank" class="google-btn">
+                      <img src="assets/images/GG.png" alt="Google icon">
+                      Sign in with Google
+                    </a>
+                  </div>
+
+                <button type="submit">Login</button>
+            </form>
+
+            <!-- Signup Form -->
+            <form id="signupForm" class="form hidden">
+                <h2>Sign Up</h2>
+                <input type="text" placeholder="Username" required />
+                <input type="email" placeholder="Email" required />
+                <input type="password" placeholder="Password" required />
+                <input type="password" placeholder="Confirm Password" required>
+                <label>Gender:</label>
+                <div  class="gender-options">
+                    <input type="radio" name="gender" value="male" required> Male
+                    <input type="radio" name="gender" value="female" required> Female
+                </div>
+                <div class="form-container">
+                    <label for="age">Age:</label>
+                    <select class="Age" name="age" id="age" required>
+                        <option value="under_18">Under 18</option>
+                        <option value="18-25">18–30</option>
+                        <option value="26-35">30–35</option>
+                        <option value="36-50">36–50</option>
+                        <option value="above_50">50 and Above</option>
+                    </select>
+                </div>
+
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <script src="CS.js"></script>
+</body>
+<footer class="footer-landing">
+    <div class="footer-content">
+        <h2>Chrono Sync</h2>
+        <p>Stay in sync with your health, your style, and your time. Only at Chrono Sync.</p>
+        <div class="footer-icons">
+            <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank"><i
+                    class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/" aria-label="Tiktok" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/" aria-label="Youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/" aria-label="Linkedin" target="_blank"><i
+                    class="fab fa-linkedin-in"></i></a>
+
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 ChronoSync. All rights reserved.</p>
+    </div>
+</footer>
+
+</html>
