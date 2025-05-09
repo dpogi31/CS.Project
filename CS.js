@@ -38,3 +38,10 @@ const modal = document.getElementById('authModal');
     signupToggle.classList.add('active');
     loginToggle.classList.remove('active');
   });
+  document.getElementById("loginForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    
+    // Simulate successful login
+    alert("Login Successful!");
+    window.location.href = "CSHomePage.html"; // replace with your actual home page filename
+});

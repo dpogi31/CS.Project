@@ -1,3 +1,7 @@
+body{
+  margin: 0;
+  padding: 0;
+}
 .landing-page {
   display: flex;
   flex-direction: column;
@@ -1449,4 +1453,57 @@ select.Age:focus {
 .logo img {
   height: 50px;
   
+}
+main h1{
+  font-family: 'Raleway';
+  font-size: 3.5rem;
+}
+.product-grid{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  padding: 1rem;
+  justify-content: center;
+
+}
+.product-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ddd4d4;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 200px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Raleway';
+  transition: transform 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.product-card img{
+width: 100%;
+height: auto;
+border-radius: .3rem;
+}
+.product-card h3 {
+  margin: 10px 0 5px;
+}
+
+.product-card p {
+  font-weight: bold;
+  color: #e0600a;
+}
+.product-card button{
+  border-radius: 2rem;
+  background-color: #0d8af0;
+  color: #ffffff;
+  border: none;
+  padding: .80rem;
+  font-size: 1rem;
+  font-family: 'Raleway';
+  cursor: pointer;
+}
+.product-card button:hover {
+  background-color: #014d9e;
 }
